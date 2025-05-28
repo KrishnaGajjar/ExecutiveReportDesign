@@ -1,0 +1,408 @@
+:root {
+     --ss-body-bg: #ffffff;
+     --ss-black-color:  #000000;
+     --ss-body-color: #182133;
+     --ss-white-color: #ffffff;
+     --ss-yellow-color: #F8A829;
+     --blue-link-color:  #2432f0;
+     --ss-paragraph: #474747;
+     --ss-green-color: #00DEA3;
+     --ss-client-logo-bg: #F5F5F5;
+     --ss-placeholder: #898989;
+     --ss-input-color: #3F4B61;
+     --ss-input-border: #BCC7D2;
+     --ss-footer-bg: #F2F5F6;
+     --ss-header-bg: #ffffff;
+     --ss-link-nav-hover: #B838A7;
+     --ss-button-gradiant:  linear-gradient(180deg, rgba(22,27,136,1) 0%, rgba(56,61,188,1) 100%);
+     --ss-button-hover-gradiant:  linear-gradient(180deg, rgba(56,61,188,1) 0%, rgba(22,27,136,1) 100%);
+     --ss-gradient: linear-gradient(90deg, #383DBC -6.67%, #753DB0 20.75%, #B33DA3 50.45%, #DB11C0 77.87%, #FE5C5D 107.58%);
+     --ss-service-gradiant-bg:    linear-gradient(86deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 60%, rgba(216,235,250,0.8) 100%);
+     --ss-core-service-bg:   #F5FCFF;
+     --ss-client-bg: #F7F7F9;     
+     --ss-innovation-color:  #E9ECFC;
+     --ss-red-color:        #F20F30;
+     --ss-light-gravish-bg:  #F2F2F1;
+     --ss-footer-bg:         #F3F3F2;
+     --ss-vertical-gradient: linear-gradient(360deg, #383DBC -6.67%, #753DB0 20.75%, #B33DA3 50.45%, #DB11C0 77.87%, #FE5C5D 107.58%);
+
+     --ss-font-common: "Barlow", serif;
+     --ss-heading-font-black: 'playfair_displayblack';
+     --ss-heading-font-bold: 'playfair_displaybold';
+}
+ 
+ html, body {
+     height: 100%;
+     padding: 0 !important;
+}
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: var(--ss-font-common);
+     font-size: 15px;
+     color: var(--ss-body-color);
+     -webkit-font-smoothing: subpixel-antialiased;
+     -webkit-text-stroke: 1px transparent;
+     background-color: var(--ss-body-bg);
+     letter-spacing: 0.5px;
+}
+ .page-wrap {
+     min-height: 100%;
+     margin-bottom: 0px;
+}
+ .page-wrap:after {
+     content: "";
+     display: block;
+}
+.full-width{width: 100%;}
+/*--------------General CSS---------*/
+ img {
+     border: 0 none;
+     max-width: 100%;
+     vertical-align: top;
+     outline:none;
+}
+ a {
+     outline: none;
+     cursor: pointer;
+     text-decoration: none;
+     -ms-transition: all 0.5s ease-out 0s;
+     -webkit-transition: all 0.5s ease-out 0s;
+     -moz-transition: all 0.5s ease-out 0s;
+     -o-transition: all 0.5s ease-out 0s;
+     transition: all 0.5s ease-out 0s;
+     color: var(--ss-heading-color);
+}
+ a:hover, a:focus {
+     color: var(--ss-body-color);
+     text-decoration: none;
+}
+ button, input[type="submit"] {
+     -ms-transition: all 0.5s ease-out 0s;
+     -webkit-transition: all 0.5s ease-out 0s;
+     -moz-transition: all 0.5s ease-out 0s;
+     -o-transition: all 0.5s ease-out 0s;
+     transition: all 0.5s ease-out 0s;
+}
+ p {
+     line-height: 20px;
+     color: var(--ss-body-color);
+     line-height: 24px;
+}
+ h1 {
+     font-size: 80px;
+     margin: 15px 0px;
+     font-family: var(--ss-heading-font-black);
+     font-weight: 600;
+}
+ h2 {
+     font-size: 40px;
+     margin: 15px 0px;
+     font-family: var(--ss-heading-font-black);
+     font-weight: 600;
+}
+ h3 {
+     font-size: 24px;
+     margin: 15px 0px;
+     font-family: var(--ss-heading-font-black);
+     font-weight: 600;
+}
+ h4 {
+     font-size: 18px;
+     margin: 15px 0px;
+     font-family: var(--ss-heading-font-black);
+     font-weight: 600;
+}
+ h5 {
+     font-size: 14px;
+     margin: 15px 0px;
+     font-family: var(--ss-heading-font-black);
+     font-weight: 600;
+}
+/*-----------------------main styles starts here-----------------------------------------------*/
+ ul {
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+}
+ label {
+     font-size: 14px;
+     color: var(--ss-paragraph);
+     font-weight:400;
+}
+ input[type="text"], input[type="password"], input[type="email"], input[type="number"], textarea, select {
+     border: 1px solid var(--ss-input-border);
+     font-size: 18px;
+     color: var(--ss-input-color);
+     padding: 15px;
+     width: 100%;
+     -webkit-box-shadow: none;
+     -webkit-appearance: none;
+     font-weight: 400;
+}
+textarea {
+     font-size: 18px !important;
+ }
+
+ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, textarea:focus, select:focus {
+     border-color: var(--ss-heading-color);
+     box-shadow: none;
+     outline: none;
+}
+ .dark-select-control, .dark-form-control{
+    border: 1px solid var(--ss-input-border);
+     border-radius: 8px;
+     line-height: 1;
+     color: var(--ss-input-color);
+     font-weight: 400;
+     box-shadow: none;
+     outline: 0;
+     width: 100%;
+     padding:12px 15px;
+}
+ .dark-form-control:focus{
+    border-color: var(--ss-heading-color)
+}
+/*===================================== PLACE HOLDER CSSS START HERE ====================================*/
+ input::-webkit-input-placeholder {
+     color:var(--ss-body-color);
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+}
+ input::-moz-placeholder {
+     color:var(--ss-body-color);
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+}
+ input::-ms-placeholder {
+     color:var(--ss-body-color);
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+}
+ input.textbox::-ms-input-placeholder {
+     color:var(--ss-body-color);
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+}
+ input.textbox::-ms-input-placeholder {
+     color:var(--ss-body-color);
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+}
+ input::-webkit-input-placeholder {
+     color:var(--ss-body-color);
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+}
+ input::-moz-placeholder {
+     color:var(--ss-body-color);
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+}
+ input::-ms-placeholder {
+     color:var(--ss-body-color);
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+}
+ input.textbox::-ms-input-placeholder {
+     color:var(--ss-body-color);
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+}
+ input.textbox::-ms-input-placeholder {
+     color:var(--ss-placeholder);
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+}
+
+textarea::-webkit-input-placeholder {
+     color:var(--ss-placeholder) !important;
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+     opacity: 1 !important; /* Ensure it's fully visible */
+}
+     
+textarea:-moz-placeholder { /* Firefox 18- */
+    color:var(--ss-placeholder) !important;
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+     opacity:  !important1; /* Ensure it's fully visible */
+}
+     
+textarea::-input-placeholder {  /* Firefox 19+ */
+    color:var(--ss-placeholder) !important;
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+     opacity:  !important1; /* Ensure it's fully visible */
+}
+     
+textarea:-ms-input-placeholder {
+     color:var(--ss-placeholder) !important;
+     font-weight: 400;
+     font-family: var(--ss-font-common);
+     opacity: 1 !important; /* Ensure it's fully visible */
+}
+input[type="submit"], button{box-shadow:none; outline:0; outline-offset:0; border: none;}
+ .cf:before, .cf:after {
+     content: "";
+     display: table 
+}
+ .cf:after {
+     clear: both;
+}
+ .cf {
+    /*zoom:1;
+    */
+}
+/*===================================== PLACE HOLDER CSSS END HERE ====================================*/
+ 
+
+ .industries-sec {
+     width: 100%;
+     padding: 70px 0;
+ }
+ .industries-sec p{
+     font-size: 24px;
+}
+.industries-sec .accordion-body{
+     padding-top: 0;
+     padding-bottom: 0;
+     padding: 0;
+}
+ .industries-sec .accordion-item{
+     background-color: transparent;
+     border: 1px solid #E5DACF;
+     margin-bottom: 30px;
+     border-radius: 12px;
+ }
+ .industries-sec .accordion-header{
+     margin:0;
+     font-size: 26px;
+     font-family: var(--ss-font-common);
+ }
+ .industries-sec .accordion-header i{
+     width: 50px;
+     height: 50px;
+     border-radius: 100px;
+     text-align: center;
+     background-color: #FEFBF9;
+     position: absolute;
+     right: -70px;
+    top: 10px;
+    padding: 10px 0;
+ }
+  .industries-sec .accordion-header [aria-expanded="true"] i{
+    transform: rotate(90deg);
+    right: 20px;
+    background-color: #f4ede6;
+  }
+  .industries-sec .accordion-button[aria-expanded="true"]{
+    background-color: #fff;
+    border-radius: 12px;
+    width: 100%;
+  }
+   .industries-sec .collapse, .industries-sec .collapsing{
+        background-color: #F4EDE6;
+        border-top: 1px solid #E5DACF;
+        background: linear-gradient(90deg, rgba(244, 237, 230, 1) 0%, rgb(255 255 255) 100%);
+        border-radius: 0 0 12px 12px;
+   }
+ .industries-sec .accordion-button{
+     color: var(--ss-body-color);
+     background-color: #FBF7F3;
+     box-shadow: none;
+     font-size: 22px;
+     font-weight: 600;
+     padding: 25px 30px;
+     text-transform: uppercase;
+     width: calc(100% - 90px);
+     border-radius: 12px;
+ }
+ .industries-sec  .accordion-button::after{
+     font-size: 20px;
+     font-weight: normal;
+     /*font-family: 'atqor-font' !important;   
+     content: "\e901";
+     background-color: var(--ss-white-color);
+     border: 1px solid var(--blue-link-color);*/
+     background-image: none;
+     display: none;
+     width: 50px;
+     height: 50px;
+     text-align: center;
+     border-radius: 100px;
+     padding: 10px 0;
+     /*transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);*/
+ }
+ .industries-sec .accordion-button:not(.collapsed)::after{
+     background-image: none;
+     /*transform: rotate(-45deg);
+     -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+     -ms-transform: rotate(-45deg);*/
+     display: none;
+ }
+ .industry-outer{
+     display: flex;
+     width: 100%;
+     padding: 30px;
+ }
+.industries-imgs{
+     width: 210px;
+}
+.industries-imgs picture, .industries-imgs figure{
+     display: block;
+     border-radius: 22px;
+     margin:0;
+}
+.industries-imgs picture img, .industries-imgs figure img{
+     border-radius: 12px;
+}
+.industries-info{
+     width: calc(100% - 210px);
+     padding: 0 20px 0 50px;
+}
+.industries-info p{
+     font-size: 16px;
+     line-height: 28px;
+}
+
+.journey-start-sec{
+     padding: 70px 0;
+     width: 100%;
+     position: relative;
+     background-color: var(--ss-light-gravish-bg);
+     background-repeat: no-repeat;
+     background-position:right -3px;
+     background-size: 60%;
+}
+.letsconnect-sec{
+     padding: 50px 0;
+     width: 100%;
+     position: relative;
+     background-repeat: no-repeat;
+     background-position:top right;
+     background-size: cover;
+}
+
+.industries-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.industries-info ul li {
+    display: flex;
+}
+.industries-info ul li a {
+    color: #0E1529;
+    border: 1px solid #a3a4a7;
+    border-radius: 100px;
+    padding: 6px 15px;
+}
+.industries-info ul li a:hover {
+    background-color: #e5d7c9;
+}
+
